@@ -1,22 +1,22 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-class Admin extends CI_Controller
-{
-    private $view = "admin/v_admin/";
-    private $redirect = "Admin";
+class Umkm extends CI_Controller{
+
+    private $view = "admin/v_umkm/";
+    private $redirect = "Umkm";
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('M_admin');
+        $this->load->model('M_umkm');
     }
 
     function index()
     {
-        $read = $this->M_admin->GetAll();
+        $read = $this->M_umkm->GetAll();
         $data = array(
             'read' => $read,
-            'judul' => "ADMINISTRATOR",
-            'sub' => "Halaman Admin"
+            'judul' => "UMKM",
+            'sub' => "Halaman UMKM"
         );
         $this->template->load('template/template', $this->view . 'read', $data);
     
@@ -33,18 +33,21 @@ class Admin extends CI_Controller
     public function save()
     {
         $data = array(
-            'username' => $this->input->post('username'),
-            'password' => md5($this->input->post('password'))
+            'id' => $this->input->post('id'),
+            'nama_perusahaan' => $this->input->post('nama_perusahaan'),
+            'pemilik' => $this->input->post('pemilik'),
+            'alamat'=> $this->input->post('alamat'),
+            'foto'=> $this->input->post('foto'),
+            'keterangan'=> $this->input->post('keterangan')
         );
-        $this->M_admin->save($data);
+        $this->M_umkm->save($data);
         redirect($this->redirect, 'refresh');
     }
-
     public function edit()
     {
         $user = $this->uri->segment(3);
         $data = array(
-            'edit' => $this->M_admin->edit($user)
+            'edit' => $this->M_umkm->edit($user)
         );
         $this->load->view($this->view . 'edit', $data);
     }
@@ -53,10 +56,13 @@ class Admin extends CI_Controller
     {
         $user = $this->uri->segment(3);
         $data = array(
-            'username' => $this->input->post('username'),
-            'password' => md5($this->input->post('password'))
+            'nama_perusahaan' => $this->input->post('nama_perusahaan'),
+            'pemilik' => $this->input->post('pemilik'),
+            'alamat'=> $this->input->post('alamat'),
+            'foto'=> $this->input->post('foto'),
+            'keterangan'=> $this->input->post('keterangan')
         );
-        $this->M_admin->update($user, $data);
+        $this->M_umkm->update($user, $data);
         redirect($this->redirect, 'refresh');
     }
 
@@ -64,9 +70,10 @@ class Admin extends CI_Controller
     {
         $user = $this->uri->segment(3);
         $data = array(
-            'username' => $user
+            'nama_perusahaan' => $user
         );
-        $this->M_admin->delete($data);
+        $this->M_umkm->delete($data);
         redirect($this->redirect, 'refresh');
     }
+
 }
