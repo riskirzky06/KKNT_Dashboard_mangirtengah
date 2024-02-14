@@ -3,6 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class M_penduduk extends CI_Model
 {
+
     private $table = 'penduduk';
     private $pk = 'nik';
 
@@ -17,17 +18,18 @@ class M_penduduk extends CI_Model
         return $this->db->insert($this->table, $data);
     }
 
-    public function edit($user)
-    {
-        $this->db->where($this->pk, $user);
-        return $this->db->get($this->table)->row_array();
-    }
+    public function edit($nik) // Mengubah parameter dari $user menjadi $nik
+{
+    $this->db->where($this->pk, $nik); // Mengubah $user menjadi $nik
+    return $this->db->get($this->table)->row_array();
+}
 
-    public function update($user, $data)
-    {
-        $this->db->where($this->pk, $user);
-        return $this->db->update($this->table, $data);
-    }
+public function update($nik, $data) // Mengubah parameter dari $user menjadi $nik
+{
+    $this->db->where($this->pk, $nik); // Mengubah $user menjadi $nik
+    return $this->db->update($this->table, $data);
+}
+
 
     public function delete($data)
     {

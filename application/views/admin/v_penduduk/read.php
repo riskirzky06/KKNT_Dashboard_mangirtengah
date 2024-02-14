@@ -35,7 +35,7 @@
             <td><?php echo $row['status'] ?></td>
             <td>
                 <!--memanggil halaman edit-->
-                <a href="<?php echo site_url('Penduduk/edit/'.$row['nama']) ?>" title="tombol untuk merubah data">Ubah</a> |
+                <a href="<?php echo site_url('Penduduk/edit/'.$row['nik']) ?>" title="tombol untuk merubah data">Ubah</a> |
                 <!--memanggil aksi delete-->
                 <a href="<?php echo site_url('Penduduk/delete/'.$row['nik']) ?>" onclick="javascript: return confirm('Yakin Mau dihapus <?php echo $row['nama']; ?>')">Hapus</a>
             </td>

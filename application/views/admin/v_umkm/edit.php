@@ -21,7 +21,7 @@
     <p>
     </p>
     <label>Keterangan</label><br>
-    <input type="text" name="Keterangan" value="<?php echo $edit['Keterangan'] ?>">
+    <input type="text" name="keterangan" value="<?php echo $edit['keterangan'] ?>">
     <p>
     </p>
     

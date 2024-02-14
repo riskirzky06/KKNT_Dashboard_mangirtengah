@@ -39,7 +39,7 @@
             </td>
             <td>
                 <!--memanggil halaman edit atau edit.php-->
-                <a href="<?php echo site_url('Umkm/edit/'.$row['nama_perusahaan']) ?>" title="tombol utk merubah data">Ubah</a> |
+                <a href="<?php echo site_url('Umkm/edit/'.$row['id']) ?>" title="tombol utk merubah data">Ubah</a> |
                 <!--memanggil aksi delete-->
                 <a href="<?php echo site_url('Umkm/delete/'.$row['nama_perusahaan']) ?>" onclick="javascript: return confirm('Yakin Mau dihapus <?php echo $row['nama_perusahaan']; ?>')">Hapus</a>
             </td>
