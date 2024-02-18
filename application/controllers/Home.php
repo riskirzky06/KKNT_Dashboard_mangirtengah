@@ -13,8 +13,7 @@ class Home extends CI_Controller
     public function index()
     {
         $data = array(
-            'judul' => "BERANDA",
-            'sub' => "Halaman Beranda"
+            'judul' => "Welcome To Website Mangir Tengah"
         );
         /*
         $this->template memanggil libraries template,
