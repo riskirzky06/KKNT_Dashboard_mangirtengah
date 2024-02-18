@@ -53,7 +53,7 @@
 
 <body>
     <header>
-        <h1>Desa Mangir</h1>
+        <h1>Dusun Mangir Tengah</h1>
     </header>
 
     <nav>
