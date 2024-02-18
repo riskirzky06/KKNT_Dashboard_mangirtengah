@@ -66,8 +66,6 @@
 
     <section>
         <h2><?php echo $judul; ?></h2>
-        <p>
-            <small><?php echo $sub; ?></small>
         </p>
 
         <!-- isi konten -->
