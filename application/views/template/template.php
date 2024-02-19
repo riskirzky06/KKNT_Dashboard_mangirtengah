@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #665b36;
+            background-color: #ffffff;
             color: #333;
         }
 
