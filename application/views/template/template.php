@@ -159,12 +159,6 @@
             </nav>
                 <!-- End of Topbar -->
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">BERANDA</h1>
-                    </div>
         <!-- Content Row -->
 
         <!DOCTYPE html>
@@ -186,37 +180,3 @@
 </head>
 <body>
 <br>
-<div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-    <li data-target="#demo" data-slide-to="3"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://pbs.twimg.com/media/FzJ5qX7XgAIZ9_H?format=jpg&name=large" width="900" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="https://pbs.twimg.com/media/FzJ5qqfWAAQmVnP?format=jpg&name=large" width="900" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="https://pbs.twimg.com/media/FzJ5q6uWYAIjWZa?format=jpg&name=large" width="900" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="https://pbs.twimg.com/media/FzJ5rLxWYAEu6jH?format=jpg&name=large" width="900" height="500">
-    </div>
-  </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
